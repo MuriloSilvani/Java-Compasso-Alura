@@ -1,4 +1,4 @@
-package projetoBanco;
+package projetoByteBank;
 
 public class Cliente {
 

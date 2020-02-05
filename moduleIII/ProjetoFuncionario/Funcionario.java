@@ -1,15 +1,12 @@
 package ProjetoFuncionario;
 
-public class Funcionario {
+public abstract class Funcionario {
+
     private String nome;
     private String cpf;
-    // protected = visivel para os filhos (que extendem a class)
-    // protected double salario;
     private double salario;
 
-    public double getBonificacao() {
-        return this.salario * 0.05;
-    }
+    public abstract double getBonificacao();
 
     public Funcionario(String nome, String cpf, double salario) {
         this.nome = nome;

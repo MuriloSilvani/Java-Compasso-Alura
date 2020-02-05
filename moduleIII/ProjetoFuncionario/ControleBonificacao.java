@@ -1,13 +1,13 @@
 package ProjetoFuncionario;
 
 public class ControleBonificacao {
-    private double soma;
 
-    public void registra(Funcionario f) {
-        this.soma = f.getBonificacao();
+    public double calculaBonificacao(Funcionario f) {
+        return f.getBonificacao();
     }
 
-    public double getSoma() {
-        return soma;
+    public double calculaSalario(Funcionario f) {
+        return f.getBonificacao() + f.getSalario();
     }
+
 }
