@@ -14,6 +14,12 @@ public abstract class Funcionario {
         this.salario = salario;
     }
 
+    public void showFuncionario() {
+        System.out.println("\nNome: " + this.getNome());
+        System.out.println("Cpf: " + this.getCpf());
+        System.out.println("Salario: " + this.getSalario());
+    }
+
     public String getNome() {
         return nome;
     }
