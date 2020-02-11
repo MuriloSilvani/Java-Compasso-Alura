@@ -1,11 +1,17 @@
-package projetoByteBank;
-
 public class Main {
     public static void main(String[] args) {
-        ContaCorrente cc = new ContaCorrente(111, 111);
-        cc.deposita(1000);
+        System.out.println("\n\n");
 
-        cc.saca(100);
+        ContaCorrente cc = new ContaCorrente(111, 111);
+        cc.deposita(200.0);
+
+        try {
+            cc.saca(100.0);
+        } catch (SaldoInsuficienteException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println(cc.getSaldo());
 
     }
 }

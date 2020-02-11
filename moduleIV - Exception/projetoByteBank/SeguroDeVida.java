@@ -1,5 +1,3 @@
-package projetoByteBank;
-
 public class SeguroDeVida implements Tributavel {
 
 	@Override

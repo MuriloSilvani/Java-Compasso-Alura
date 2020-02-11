@@ -1,6 +1,4 @@
-/**
- * Fluxo
- */
+
 public class Fluxo {
     public static void main(String[] args) {
         System.out.println("Ini do main");
@@ -18,7 +16,6 @@ public class Fluxo {
         try {
             metodo2();
         } catch (Exception e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
@@ -30,11 +27,9 @@ public class Fluxo {
         for (int i = 1; i <= 5; i++) {
             System.out.println(i);
 
-            // int a = i / 0;
+            // Conta c = null;
 
-            Conta c = null;
-
-            c.deposita();
+            // c.deposita();
 
         }
         System.out.println("Fim do metodo2");
